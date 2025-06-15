@@ -42,6 +42,7 @@ rm -rf node_modules package-lock.json
 
 
 # para exportar apk
--npx expo login
--npx eas build:configure
--npx eas build -p android --profile preview
+## exportar ultima instancia
+- npx expo login
+- npx eas build:configure
+- npx eas build -p android --profile preview
