@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# Bingo App 🎯
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Una aplicación de Bingo interactiva desarrollada con React Native y Expo Router.
 
-## Get started
+## Características
 
-1. Install dependencies
+- 🎲 Generación automática de números de Bingo
+- 📱 Interfaz intuitiva y responsive
+- 🎯 Seguimiento de números marcados
+- 📊 Gestión de tickets de Bingo
+- 🌐 Funciona en Android, iOS y Web
 
+## Tecnologías utilizadas
+
+- **React Native** - Framework para desarrollo móvil
+- **Expo SDK 53** - Plataforma de desarrollo
+- **Expo Router** - Navegación basada en archivos
+- **TypeScript** - Tipado estático
+- **React Native Reanimated** - Animaciones fluidas
+
+## Instalación y configuración
+
+### Prerrequisitos
+
+- Node.js (versión 18 o superior)
+- npm o yarn
+- Expo Go app en tu dispositivo móvil
+
+### Pasos de instalación
+
+1. **Clona el repositorio**
    ```bash
-   npm install
-   ```
+   git clone [tu-repo-url]
+   cd bingo_app
 
-2. Start the app
+# Solución de problemas comunes
+## Error de dependencias
+rm -rf node_modules package-lock.json
+- npm install --legacy-peer-deps
 
-   ```bash
-    npx expo start
-   ```
+- npx expo start --clear
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# para exportar apk
+-npx expo login
+-npx eas build:configure
+-npx eas build -p android
